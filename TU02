@@ -1,0 +1,4 @@
+EXERCISE 1
+
+b = input("how is your day")
+print(b, "nice")
