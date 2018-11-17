@@ -1,0 +1,10 @@
+EXERCISE 1
+
+MyHeight = 158
+YourHeight = int(input("What's your height in cm?"))
+if MyHeight > YourHeight:
+    print("I'm taller than you so that means I'm better.")
+if MyHeight == YourHeight:
+    print("powerful equals, we are")
+if MyHeight < YourHeight:
+    print("wow congrats on being genetically predetermined to be taller than me")
