@@ -1,0 +1,14 @@
+EXERCISE 1
+
+DannyDevitoBorn = 1944
+MyAge = int(input('When were you born?'))
+AgeDifference = MyAge - DannyDevitoBorn
+print("Danny Devito is %d years older than you" % AgeDifference)
+
+EXERCISE 2
+
+Celebname = input("What is their name?")
+CelebBorn = int(input('When were they born?'))
+MyAge = int(input('When were you born?'))
+AgeDifference = MyAge - CelebBorn
+print(Celebname, "is", AgeDifference, "older than you")
