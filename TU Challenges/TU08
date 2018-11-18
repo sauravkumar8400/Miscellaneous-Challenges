@@ -1,0 +1,15 @@
+EXERCISE 1
+
+while True:
+    fav_subject = input ('is your fav subject Computer Science?')
+    if fav_subject == "cs" :
+        break
+
+EXERCISE 2
+
+number = 0 #You have to declare this first
+while number < 15 or number > 20 :
+    print("Please enter a number between 15 and 20")
+    number = float(input("enter a number:"))
+
+
