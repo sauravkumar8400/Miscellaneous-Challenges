@@ -1,0 +1,17 @@
+EXERCISE 1
+
+import random
+
+mynumber = random.uniform(0.1,9.9)
+print(mynumber)
+
+EXERCISE 2
+
+import random
+Choose_Name = ["Raushan","Alex","Rahul","Nicole"]
+for i in range(1,5):
+    chosen = random.choice(Choose_Name)
+    print(chosen)
+re = input("Remove name? y/n")
+if re == "y":
+    Choose_Name.remove(chosen)
