@@ -1,0 +1,15 @@
+Create a game where you guess a number from 1 to 100. The program should tell you if the number is higher or lower and check for non-valid input.
+
+import random
+
+a = random.randint(0,100)
+
+for i in range(1000):
+    inp = int(input("enter a number "))
+    if inp > a:
+        print("way too high")
+    elif inp < a:
+        print("way too low")
+    elif inp == a:
+        print("As Post Malone famously once said, Congratulations!")
+        break
