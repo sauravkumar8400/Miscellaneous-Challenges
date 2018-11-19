@@ -1,0 +1,9 @@
+User inputs 12 hour clock and am or pm and you will convert it to the 24 hour equivalent.
+
+time = int(input("Enter a number between 1 and 12"))
+am_pm = input("AM or PM?")
+
+if am_pm == "PM":
+    print(time + 12, "o'clock")
+elif time == 12 and am_pm == "AM":
+    print("00:00")
