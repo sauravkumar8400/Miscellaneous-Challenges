@@ -1,0 +1,14 @@
+EXERCISE 1
+
+allies =["pew pew", "lotion","911 GT2 RS","ragod", "bead"]
+
+print(allies[0:4])
+
+EXERCISE 2
+
+preexist = ["danny devito", "greg heff", "pingu", "that one guy from naruto but not that other guy"]
+vid_gam_char = input("any video game characters?")
+
+preexist.append(vid_gam_char)
+
+print(preexist)
