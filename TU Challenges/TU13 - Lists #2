@@ -1,0 +1,21 @@
+EXERCISE 1
+
+prime_nubbas = (1,2,3,5,7)
+
+print(sum(prime_nubbas))
+
+EXERCISE 2
+
+prime_nubbas = (1,2,3,5,7,)
+
+total = sum(prime_nubbas)
+min = min(prime_nubbas)
+max = max(prime_nubbas)
+length = len(prime_nubbas)
+avg = sum(prime_nubbas)/len(prime_nubbas)
+
+print("the total of the list is", total)
+print("the minimum of the list is", min)
+print("the maximum of the list is", max)
+print("the length of the list is", length)
+print("the average of the list is", avg)
