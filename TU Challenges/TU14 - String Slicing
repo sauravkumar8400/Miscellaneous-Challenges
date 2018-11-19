@@ -1,0 +1,15 @@
+EXERCISE 1
+
+string_time = "stringtime"
+
+print(string_time)
+
+EXERCISE 2
+
+string_time = "stringtime"
+
+print(string_time[0:10:3]) #slices forwards, skipping 3 letters
+
+print(string_time[-1:-11:-1]) #slices backwards
+
+print(string_time[-1:-11:-3]) #slices backwards skipping 3 letters
