@@ -1,0 +1,16 @@
+import random
+list = []
+
+for i in range(0,50):
+    x = random.randint(0,100)
+    list.append(x)
+print(list)
+
+min = min(list)
+max = max(list)
+avg = int(sum(list)/len(list))
+
+
+print("\nthe minimum of the list is", min)
+print("the maximum of the list is", max)
+print("the average of the list is", avg)
