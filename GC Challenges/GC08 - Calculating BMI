@@ -1,0 +1,18 @@
+BMI = weight / height^2 Where weight is taken in kilograms and height in meters. Where weight is taken in kilograms and height in meters. <BR> Underweight - BMI < 18.5 <BR> Normal weight - 18.5 <= BMI < 25.0 Overweight - 25.0 <= BMI < 30.0 <BR> Obesity - 30.0 <= BMI <BR>Somebody should input weight and height and you calculate the BMI You can be cheeky in your messages!
+
+
+weight = float(input("What is your weight, in kg? "))
+height = int(input("What is your height, in cm? "))
+
+BMI = weight/(height)
+
+print("your BMI is",round(BMI,1))
+
+if BMI < 18.5:
+    print("UNDERWEIGHT \n time to get eating, Mr. Skin & Bones!")
+elif BMI >= 18.5 and BMI < 25.0:
+    print("NORMAL \n Congratulations!")
+elif BMI >= 25.0 and BMI < 30.0:
+    print("OVERWEIGHT \n Time to put down the Lays and pick up the dumbbells!")
+elif BMI >= 30.0:
+    print("may God have mercy on your soul")
