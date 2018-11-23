@@ -1,0 +1,22 @@
+Create a game of rock, paper, Scissors to play against the computer.
+
+import random
+
+game = ["Scissors","Paper","Rock"]
+
+computer = random.choice(game)
+
+user_input = input("Scissors, Paper, or Rock? ")
+
+print("Computer chooses", computer)
+
+if user_input == "Scissors" and computer == "Paper":
+    print("Scissors CUT Paper! YOU WIN!")
+elif user_input == "Paper" and computer == "Rock":
+    print("Paper ENVELOPES Rock! YOU WIN!")
+elif user_input == "Rock" and computer == "Scissors":
+    print("Rock CRUSHES Scissors! YOU WIN!")
+elif user_input == computer:
+    print("Draw! Go again to see who wins!")
+else:
+    print("Computer ANNIHILATED you! You LOSE!")
