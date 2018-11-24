@@ -1,0 +1,9 @@
+Write a program that checks somebody is competent to operate machinery in the nuclear factory by insisting that they type the same phrase twice. You can choose the phrase. Make sure it's twisty!	
+
+a = "fortnite dance, fornite dance fortnut dance"
+b = input("type in that phrase, exactly ")
+
+if a == b:
+    print("you are not drunk, congratulations")
+else:
+    print("DRUNKARD, GET OUT OF MY SIGHT")
