@@ -1,0 +1,82 @@
+byte= ["1001100", "1101010", "1011101","0010111","0101011","1010110","0011011"]
+List=[]
+
+count=0
+for i in byte:
+        for a in i:
+            if (a) == "1":
+                count+=1
+            else:
+                continue
+        if count%2==0:
+            List.append(i+"0",)
+        else:
+            List.append(i+"1",)
+        count = 0   
+
+print("PARITY BLOCK")
+print("")
+
+def paritycheck(byte):
+    count=0
+    number=0
+    for i in byte:
+        for a in i:
+            if (a) == "1":
+                count+=1
+            else:
+                continue
+        if count%2==0:
+            number+=1
+            print("Byte", number, "=     ",i+"0")
+        else:
+            number+=1
+            print("Byte", number, "=     ",i+"1")
+        count = 0   
+
+    
+def sumcalc(List):
+    paritybyte = ""
+    sum1= ""
+    sum2= ""
+    sum3= ""
+    sum4= ""
+    sum5= ""
+    sum6= ""
+    sum7= ""
+    sum8= ""
+    for i in List:
+        sum1+=(i[0])
+    for i in List:
+        sum2+=(i[1])    
+    for i in List:
+        sum3+=(i[2])
+    for i in List:
+        sum4+=(i[3])
+    for i in List:
+        sum5+=(i[4])
+    for i in List:
+        sum6+=(i[5])
+    for i in List:
+        sum7+=(i[6])
+    for i in List:
+        sum8+=(i[7])
+    
+    sumlist= [sum1, sum2, sum3, sum4, sum5, sum6, sum7, sum8]
+    count=0
+    for b in sumlist:
+        for a in b:
+            if (a) == "1":
+                count+=1
+            else:
+                continue
+        if count%2==0:
+            paritybyte+="0"
+        else:
+            paritybyte+="1"
+        count = 0   
+    print("Paritybyte = ", paritybyte)
+
+
+paritycheck(byte)
+sumcalc(List)
