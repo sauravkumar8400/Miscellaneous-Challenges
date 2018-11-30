@@ -1,6 +1,6 @@
 import random
 
-list = ["cheesecake","marker","calculator","porscheconfig","throwing","crack","cookie"]
+list = ["cheesecak","marker","calculator","porscheconfig","throwing","crackcookie"]
 password = random.choice(list)
 
 correctcount = 0
