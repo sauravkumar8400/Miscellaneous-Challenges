@@ -1,0 +1,23 @@
+import random
+
+list = ["cheesecake","marker","calculator","porscheconfig","throwing","crack","cookie"]
+password = random.choice(list)
+
+correctcount = 0
+print("The length of your password is " + str(len(password)))
+a = str(input("Please enter the word"))
+while len(a) != len(password) or type(a) != str:
+    print("Incorrect format")
+    a = str(input("Please enter the word"))
+while correctcount != len(password):
+    correctcount = 0
+    for i in range(0,len(password)):
+        OG = password[i]
+        fake = a[i]
+        if OG == fake:
+            correctcount += 1
+    print("The number of letters in the correct position: " + str(correctcount))
+    if correctcount == len(password):
+        break
+    a = str(input("Please enter the word"))
+print("Congratulations! You win!!")
