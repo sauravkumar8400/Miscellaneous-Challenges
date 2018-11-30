@@ -1,0 +1,73 @@
+import random
+import turtle
+yes = input("Please enter yeet for even and bool for odd")
+
+list = []
+
+for i in range (8):
+    byte = ''
+    for x in range (7):
+        y = random.randint(0,1)
+        y = str(y)
+        byte += y
+
+    count = 0
+    check = 0
+
+    for i in byte :
+        if i == '1':
+            count += 1
+
+    string = ''
+    if yes == 'yeet'and count%2 == 0:
+        string += '0'
+        string += byte
+
+    elif yes == 'bool'and count%2 == 1:
+        string += '1'
+        string += byte
+
+    elif yes == 'yeet'and count%2 == 0:
+        string += '1'
+        string += byte
+
+    elif yes == 'yeet'and count%2 == 1:
+        string += '0'
+        string += byte
+
+    list.append(string)
+
+
+print(list)
+
+list2 = []
+for i in list :
+    list3 = []
+    for j in i :
+        list3.append(j)
+    list2.append(ralist3)
+
+for i in list2:
+    print(i)
+
+print('---------------------')
+
+list = []
+for i in range (8):
+
+    count = 0
+    for j in list2:
+        y = j[i]
+        if y =='1':
+            count += 1
+   if count % 2 == 0 and yes =='yeet':
+        list.append("1")
+    elif count % 2 == 1 and yes =='yeet':
+        list.append("0")            
+    elif count % 2 == 0 and yes =='bool':
+        list.append("0")
+    elif count % 2 == 1 and yes =='bool':
+        list.append("1")
+ 
+
+print(list)
