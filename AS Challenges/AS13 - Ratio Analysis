@@ -1,0 +1,11 @@
+Create a program to calculate common Ratio Analyses
+
+GP = int(input("Gross Profit "))
+NP = int(input("Net Profit "))
+S = int(input("Sales "))
+
+GPM = int(GP / S * 100)
+CPM = int(NP / S * 100)
+
+print("The Gross Profit Margin is", GPM,"%")
+print("The Net Profit Margin is", CPM,"%")
