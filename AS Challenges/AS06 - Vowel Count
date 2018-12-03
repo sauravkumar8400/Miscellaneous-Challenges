@@ -1,0 +1,7 @@
+word = input("enter something and kachigga da trigga ")
+
+print("a occurred", word.count("a"), "times")
+print("e occurred", word.count("e"), "times")
+print("i occurred", word.count("i"), "times")
+print("o occurred", word.count("o"), "times")
+print("u occurred", word.count("u"), "times")
