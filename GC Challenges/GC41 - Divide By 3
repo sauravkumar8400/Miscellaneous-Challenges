@@ -1,0 +1,8 @@
+Ask for a number and the computer will tell you if you can divide it exactly by 3.
+
+a = int(input("Please enter a number "))
+
+if a % 3 == 0:
+    print("This number is exactly divisible by 3")
+else:
+    print("This number is NOT exactly divisible by 3")
