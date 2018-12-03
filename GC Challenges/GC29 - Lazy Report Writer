@@ -1,0 +1,15 @@
+A lazy economics teacher wants to write his reports really quickly. Create a Random report writer with a list of generic comments. It should ask for the number of students and then generate a random comment for each student.	
+
+import random
+
+adj=("intelligent","bachinga","kachigga","kachow","bright","slow","idiotic","10 IQ")
+desc=("worked hard", "hardly worked","slacked off","done nothing but order McDonald's")
+improv=("can stop using the B emoji","can commit die","can T-Pose properly","can sing Life Is A Highway by Rascal Flatts")
+
+
+while True:
+    name = input("Name: ")
+    a = random.choice(adj)
+    b = random.choice(desc)
+    c = random.choice(improv)
+    print(name, "is a very", a, "student, who has",b,"during this year. If he", c,"he will undoubtedly improve.")
