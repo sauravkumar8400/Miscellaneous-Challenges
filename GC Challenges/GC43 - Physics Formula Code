@@ -1,0 +1,13 @@
+a = input("what would you like to find? ")
+if a == "speed":
+    d = int(input("distance "))
+    t = int(input("time "))
+    print("the speed is", d /t, "m/s")
+elif a == "distance":
+    s = int(input("speed "))
+    t = int(input("time "))
+    print("the distance is", s * t, "m")
+elif a == "time":
+    s = int(input("speed "))
+    d = int(input("distance "))
+    print("the time is", d / s, "s")
