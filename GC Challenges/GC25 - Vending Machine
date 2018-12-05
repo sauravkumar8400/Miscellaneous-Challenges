@@ -1,0 +1,24 @@
+Write a program to simulate a vending machine. You should be able to put coins in, select a product and then output the product and any change left over. You choose what your vending machine vends and the amount items cost.
+
+list = "Snickers","Coke","fx-570ES-PLUS"
+
+print("Welcome to the new GIS Vending Machine!")
+print("We have",list,"on sale! \n")
+
+Snickers = 2.5
+Coke = 3
+fx570 = 69
+
+a = input("What would you like to buy? ")
+
+if a == "Snickers":
+    snickinp = float(input("Great! That'll be $2.5"))
+    print("Here is your Snickers! Your change is",(snickinp - 2.5))
+elif a == "Coke":
+    cokeinp = float(input("Great! That'll be $3"))
+    print("Here is your Coke! Your change is",(cokeinp - 3))
+elif a == "fx570":
+    fxinp = float(input("Great! That'll be $69"))
+    print("Here is your fx-570ES-PLUS! Your change is",(fxinp - 69))
+
+
