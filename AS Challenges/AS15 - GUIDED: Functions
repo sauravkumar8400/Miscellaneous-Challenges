@@ -1,0 +1,12 @@
+
+def sum(list):
+    sum = 0
+    for i in list:
+        sum = sum + i
+    return sum
+
+mylist = [1,2,3,4,5]
+print(sum(mylist))
+
+
+
