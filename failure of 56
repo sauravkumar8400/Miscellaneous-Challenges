@@ -1,0 +1,12 @@
+import random
+
+a = random.randint(0,256)
+
+print(a)
+
+use= input("wwhat ")
+
+if use == bin(a):
+    print("nci")
+else:
+    print("sad")
