@@ -1,0 +1,8 @@
+Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list.
+
+list=input('Enter a list in correct format')
+newlist=[]
+
+newlist.append(list[1])
+newlist.append(list[-2])
+print(newlist)
