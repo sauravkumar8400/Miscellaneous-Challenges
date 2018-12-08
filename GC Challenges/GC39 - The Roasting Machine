@@ -1,0 +1,8 @@
+import random
+
+list = ["a brain dead muppet","an ape that has to use Google Translate every time you speak","waste of chromosomes", "a complete disappointment to your family"]
+
+a = random.choice(list)
+name = input("what name ")
+
+print(name,"you are", a)
