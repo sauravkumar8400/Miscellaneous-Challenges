@@ -1,0 +1,18 @@
+import random
+
+capitals=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+small=['q','w','e','r','t','y','u','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m']
+char = ['!','@','#','$','%','^','&','&','*','~','?']
+password = ""
+print('Here is your password')
+
+for i in range(0,random.randint(1,5)):
+    password+=random.choice(char)
+
+for i in range(0,random.randint(1,5)):
+    password+=random.choice(capitals)
+
+for i in range(0,random.randint(1,5)):
+    password+=random.choice(small)
+
+print(password)
