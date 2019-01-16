@@ -1,0 +1,11 @@
+import random
+
+p1 = input("name of fighter ")
+p2 = input("name of fighter ")
+players = p1,p2
+
+a = random.choice(players)
+
+
+
+print("the person who goes first is", a)
