@@ -1,11 +1,29 @@
 import random
 
 p1 = input("name of fighter ")
-p2 = input("name of fighter ")
-players = p1,p2
+computer = input("name of computer fighter ")
+print(p1, "will smash it out against", computer, "\n")
 
-a = random.choice(players)
+p1h = 100
+ch = 100
 
+p1attack = random.randint(0, 25)
+p2attack = random.randint(0, 25)
 
+ch = ch - p1attack
+p1h = p1h - p2attack
 
-print("the person who goes first is", a)
+while True:
+    input("what will {} do?".format(p1))
+    print(p1, "dealt", p1attack, "damage!", computer, "has", ch, "health remaining")
+    print(computer, "deals", p2attack, "damage!", p1, "has", p1h, "health remaining \n")
+    p1attack = random.randint(0, 25)
+    p2attack = random.randint(0, 25)
+    ch = ch - p1attack
+    p1h = p1h - p2attack
+    if p1h < 0:
+        print("you lose")
+    elif ch < 0:
+        print("you win")
+        break
+
