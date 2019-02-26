@@ -1,0 +1,19 @@
+def bubblesort (arr):
+    n = int(len(arr))
+    for i in range(n-1,0,-1):
+        for j in range (i):
+            if arr[j] > arr[j+1]:
+                temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+            print (arr)
+
+
+array = []
+
+for x in range(8):
+    numb = int(input("Enter a number"))
+    array.append(numb)
+
+
+bubblesort(array)
