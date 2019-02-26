@@ -1,0 +1,15 @@
+position = 0
+found = False
+
+item = str(input("a num "))
+
+list = ['0','3','2','5']
+
+
+while position < len(list) and not found:
+   if list[position] == item:
+       found = True
+       print("found")
+       print(str(position))
+   position = position + 1
+
