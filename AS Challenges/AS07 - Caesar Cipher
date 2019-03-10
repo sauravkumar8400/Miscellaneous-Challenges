@@ -1,0 +1,71 @@
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+            'v', 'w', 'x', 'y', 'z']
+
+
+def Caesar(word, difference):
+    string = ''
+    for i in word:
+        if i in alphabet:
+            for j in range(26):
+                alpha = alphabet[j]
+                if i == alpha:
+                    value = j + difference
+                    value = value % 25
+                    string += alphabet[value]
+        else:
+            string += i
+    return (string)
+
+
+def encode():
+    w = 'MyText.txt'
+    x = open(w, 'w')
+    y = 'MyCipher.txt'
+    z = open(y, 'r')
+    for line in z:
+        line = line.lower()
+        x.write(Caesar(line, 5) + '\n')
+
+
+def decode1(key):
+    List = []
+    w = 'MyText.txt'
+    x = open(w, 'r')
+    forwards = 25 - key
+    for line in x:
+        w = Caesar(line, forwards)
+        List.append(w)
+    return List
+
+
+def decode2():
+    List2 = []
+    for i in range(26):
+        w = 'MyText.txt'
+        x = open(w, 'r')
+        List = []
+        for line in x:
+            List.append(Caesar(line, i))
+        List2.append(List)
+        x.close()
+    return List2
+
+
+encode()
+
+def decodewithoutkey(List):
+    List3 = []
+    for i in List:
+        check = 0
+        for j in i:
+            if 'the' in j:
+                check = 1
+        if check == 1:
+            List3.append(i)
+
+    for i in List3:
+        for j in i:
+            print(j)
+
+
+decodewithoutkey(decode2())
