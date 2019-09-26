@@ -1,0 +1,10 @@
+from sympy import Symbol, Derivative
+
+
+
+function= str(input("enter function"))
+x = Symbol('x')
+
+derive = Derivative(function, x)
+
+print("the derivative of", function, "is", derive)
